@@ -1,9 +1,15 @@
-package com.ds.creational;
+package com.ds.creational.singleton;
 
 /**
  * This program is Single ton class with eager initialization
  * @author PKasula
  *
+ */
+
+/*
+ * Using this approach, we rely on the JVM to create the unique instance of the Singleton when the class is loaded. 
+ * The JVM guarantees that the instance will be created before any thread accesses the static uniqueInstance variable.
+ * Now here is one catch! We have to think about thread safety. In that case, we go with lazy initialization.
  */
 public class SingletonWithEager {
 	
